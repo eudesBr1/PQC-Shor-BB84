@@ -57,3 +57,5 @@ plt.grid(True, linestyle=':', alpha=0.6)
 plt.savefig("results/graphique_bb84_mega.png")
 
 print("Benchmark fini !  'results_bb84_complet.csv' et 'graphique_bb84_mega.png' dans le dossier 'results'.")
+
+# legende anglais + variance
