@@ -23,7 +23,7 @@ def simulate_bb84(n, interception=False):
                 if randint(0, 100) < 25: errors += 1
     return (errors / common_bases * 100) if common_bases > 0 else 0
 
-print("📊 Lancement du Mega Benchmark BB84...")
+print("Lancement du Mega Benchmark BB84...")
 n_tests = [20, 50, 100, 200]
 final_results = []
 
@@ -56,4 +56,4 @@ plt.legend(loc='upper right')
 plt.grid(True, linestyle=':', alpha=0.6)
 plt.savefig("results/graphique_bb84_mega.png")
 
-print("✅ Benchmark fini ! Regarde 'results_bb84_complet.csv' et 'graphique_bb84_mega.png'.")
+print("Benchmark fini !  'results_bb84_complet.csv' et 'graphique_bb84_mega.png' dans le dossier 'results'.")

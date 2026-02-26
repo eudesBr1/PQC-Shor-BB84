@@ -17,7 +17,7 @@ temps_classique = 10**(-3) * np.exp(0.02 * tailles_cles)
 # Quantique (Shor) : Croissance polynomiale (n^3)
 temps_shor = 10**(-1) * (tailles_cles / 1024)**3 
 
-print("🚀 Lancement du Benchmark Prédictif Shor...")
+print("Lancement du Benchmark Prédictif Shor")
 
 # --- GÉNÉRATION DU TABLEAU DE RÉSULTATS ---
 final_results = []
@@ -37,7 +37,7 @@ for i in range(len(tailles_cles)):
 df = pd.DataFrame(final_results, columns=["Algo", "Config", "Metric", "Value", "Unit"])
 df.to_csv("results/results_shor_complet.csv", index=False)
 
-# --- GÉNÉRATION DU GRAPHIQUE ---
+# generatuion du graphique
 plt.figure(figsize=(10, 6))
 plt.plot(tailles_cles, temps_classique, label="Ordinateur Classique (RSA)", color="red", linewidth=2, marker='o')
 plt.plot(tailles_cles, temps_shor, label="Ordinateur Quantique (Shor)", color="green", linewidth=2, marker='s')
@@ -54,4 +54,4 @@ plt.grid(True, which="both", ls="-", alpha=0.3)
 plt.legend()
 plt.savefig("results/graphique_shor_benchmark.png")
 
-print("✅ Terminé ! Les fichiers 'results_shor_complet.csv' et 'graphique_shor_benchmark.png' sont prêts.")
+print("Terminé ! Les fichiers 'results_shor_complet.csv' et 'graphique_shor_benchmark.png' sont disponibles dans le dossier 'results'.")
