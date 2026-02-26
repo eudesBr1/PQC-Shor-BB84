@@ -1,0 +1,16 @@
+Algo,Config,Metric,Value,Unit
+Shor,RSA-512,Temps Classique (est.),2.80e+01,sec
+Shor,RSA-512,Temps Shor (théorique),1.25e-02,sec
+Shor,RSA-512,Statut Classique,VULNÉRABLE,N/A
+Shor,RSA-1024,Temps Classique (est.),7.84e+05,sec
+Shor,RSA-1024,Temps Shor (théorique),1.00e-01,sec
+Shor,RSA-1024,Statut Classique,SÉCURISÉ,N/A
+Shor,RSA-2048,Temps Classique (est.),6.15e+14,sec
+Shor,RSA-2048,Temps Shor (théorique),8.00e-01,sec
+Shor,RSA-2048,Statut Classique,SÉCURISÉ,N/A
+Shor,RSA-3072,Temps Classique (est.),4.82e+23,sec
+Shor,RSA-3072,Temps Shor (théorique),2.70e+00,sec
+Shor,RSA-3072,Statut Classique,SÉCURISÉ,N/A
+Shor,RSA-4096,Temps Classique (est.),3.78e+32,sec
+Shor,RSA-4096,Temps Shor (théorique),6.40e+00,sec
+Shor,RSA-4096,Statut Classique,SÉCURISÉ,N/A

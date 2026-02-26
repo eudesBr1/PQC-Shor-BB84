@@ -1,0 +1,13 @@
+Algo,Config,Metric,Value,Unit
+BB84,20 Qubits,Moyenne (Sans Eve),0.0,%
+BB84,20 Qubits,Moyenne (Avec Eve),24.90770618270619,%
+BB84,20 Qubits,Max (Avec Eve),80.0,%
+BB84,50 Qubits,Moyenne (Sans Eve),0.0,%
+BB84,50 Qubits,Moyenne (Avec Eve),23.65834636208165,%
+BB84,50 Qubits,Max (Avec Eve),50.0,%
+BB84,100 Qubits,Moyenne (Sans Eve),0.0,%
+BB84,100 Qubits,Moyenne (Avec Eve),24.930001192765772,%
+BB84,100 Qubits,Max (Avec Eve),42.5531914893617,%
+BB84,200 Qubits,Moyenne (Sans Eve),0.0,%
+BB84,200 Qubits,Moyenne (Avec Eve),24.75530894730274,%
+BB84,200 Qubits,Max (Avec Eve),36.17021276595745,%
