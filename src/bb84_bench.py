@@ -24,15 +24,15 @@ def simulate_bb84(n, interception=False):
     return (errors / common_bases * 100) if common_bases > 0 else 0
 
 print("Lancement du Mega Benchmark BB84...")
-n_tests = [20, 50, 100, 200]
+n_tests = [10, 20, 40, 50]
 final_results = []
 
 plt.figure(figsize=(10, 6))
 
 for n in n_tests:
     # On lance 100 fois pour chaque n
-    sans_eve = [simulate_bb84(n, False) for _ in range(100)]
-    avec_eve = [simulate_bb84(n, True) for _ in range(100)]
+    sans_eve = [simulate_bb84(n, False) for _ in range(1000)]
+    avec_eve = [simulate_bb84(n, True) for _ in range(1000)]
     
     # On ajoute au tableau CSV
     final_results.append(["BB84", f"{n} Qubits", "Moyenne (Sans Eve)", np.mean(sans_eve), "%"])
@@ -40,8 +40,8 @@ for n in n_tests:
     final_results.append(["BB84", f"{n} Qubits", "Max (Avec Eve)", np.max(avec_eve), "%"])
 
     # On prépare le graphique
-    plt.scatter([n]*100, avec_eve, color='red', alpha=0.3, label='Interception' if n==20 else "")
-    plt.scatter([n]*100, sans_eve, color='green', alpha=0.3, label='Sûr' if n==20 else "")
+    plt.scatter([n]*1000, avec_eve, color='red', alpha=0.3, label='Interception' if n==20 else "")
+    plt.scatter([n]*1000, sans_eve, color='green', alpha=0.3, label='Sûr' if n==20 else "")
 
 # Sauvegarde CSV
 df = pd.DataFrame(final_results, columns=["Algo", "Config", "Metric", "Value", "Unit"])
@@ -59,3 +59,5 @@ plt.savefig("results/graphique_bb84_mega.png")
 print("Benchmark fini !  'results_bb84_complet.csv' et 'graphique_bb84_mega.png' dans le dossier 'results'.")
 
 # legende anglais + variance
+
+#faire autre algo qui fait le temps en fonction taille matrice
